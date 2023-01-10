@@ -1,0 +1,68 @@
+<%- include("./partials/header.ejs") %>
+        <main class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-xs-8 offset-xs-1 mb-4">
+                    <div class="mb-5 mt-5">
+                        <%- include("./partials/alert.ejs") %>
+                        <section id="best-features" class="text-center mb-4">
+                            <h2 class="text-center mb-4 mt-4">Welcome to Collector's Home</h2>
+                            <div class="row d-flex justify-content-center mb-5">
+                                <div class="col-md-10 mb-4 mt-4">
+                                    <p class="grey-text">TradeBay provides the access to most exclusive collection of
+                                        trading cards from users all across the world with exclusive access for the
+                                        member to trade, and expand their collection.</p>
+                                </div>
+                            </div>
+                            <div class="row mt-5 bg-white">
+                                <div class="col-md-4 mb-3 ">
+                                    <i class="fab fa-d-and-d fa-4x icon-color mt-4"></i>
+                                    <h4 class="my-4 font-weight-bold">Trade</h4>
+                                    <p class="grey-text">Get chance to exchange the rare and awaited collectables.</p>
+                                </div>
+                                <div class="col-md-4 mb-1">
+                                    <i class="fas fa-dolly fa-4x icon-color mt-4"></i>
+                                    <h4 class="my-4 font-weight-bold">Collect</h4>
+                                    <p class="grey-text">Expand your collection through postings and connect
+                                        with other collectors.</p>
+                                </div>
+                                <div class="col-md-4 mb-1">
+                                    <i class="fas fa-heart fa-4x icon-color mt-4"></i>
+                                    <h4 class="my-4 font-weight-bold">Enjoy</h4>
+                                    <p class="grey-text">Get exclusive access to the trending items in the market.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <hr class="my-5 mx-4">
+
+                        <!-- SLIDER -->
+                        <h3 class="text-center mb-4 mt-3">Our Latest and Exclusive Collections</h3>
+
+                        <div id="carousel-slide" class="carousel slide mt-5" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="/images/starwars.jpg" class="d-block w-100" alt="slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="/images/pokemon.jpg" class="d-block w-100" alt="slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/dbz.jpg" class="d-block w-100" alt="slide">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-slide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <%- include("./partials/footer.ejs") %>
